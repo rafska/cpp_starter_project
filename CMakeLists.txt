@@ -9,8 +9,10 @@ endif ()
 add_executable(intro main.cpp)
 target_compile_features(intro PRIVATE cxx_lambda_init_captures)
 
+# qt
+add_subdirectory(qt)
+
 enable_testing()
 
 add_executable(tester tester.cpp)
 add_test(Tester tester)
-

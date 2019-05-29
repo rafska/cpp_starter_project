@@ -1,0 +1,5 @@
+find_package(Qt5Widgets CONFIG REQUIRED)
+set (CMAKE_AUTOMOC ON)
+add_executable(helloQt qtMain.cpp helloQt.cpp)
+target_link_libraries(helloQt Qt5::Widgets)
+target_compile_features(helloQt PUBLIC cxx_nullptr)
